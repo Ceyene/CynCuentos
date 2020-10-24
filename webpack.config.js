@@ -36,7 +36,7 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ],
-            }
+            },
             //regla para archivos multimedia
             {
                 test: /\.(png|gif|jpg|svg)$/,
