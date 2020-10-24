@@ -7,7 +7,7 @@ import '../assets/styles/components/Header.scss';
 const Header = () => (
     //return explícito
     <header className="header">
-        <img className="header__img" src='../assets/images/logoceyeneseries.png' alt="Ceyene Series Logo" />
+        <img className="header__img" src='../assets/images/logoceyeneseries.png' alt="Ceyene Libros Logo" />
         <div className="header__menu">
             <div className="header__menu--profile">
                 <img src='../assets/images/usuario.png' alt="Usuario" />

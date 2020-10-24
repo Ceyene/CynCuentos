@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: radial-gradient(circle, rgba(64,224,144,1) 0%, rgba(112,70,163,1) 100%);
+  background: linear-gradient(19deg, #EE74E1 0%, #3EECAC 100%);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -23,6 +23,27 @@ input {
 
 button {
     outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover {
+  background: #b3b3b3;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active {
+  background: #999999;
 }
 
 

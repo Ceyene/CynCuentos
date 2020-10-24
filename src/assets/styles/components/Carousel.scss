@@ -1,0 +1,31 @@
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  padding-left: 1.875rem;
+  position: relative;
+
+    &__container {
+        display: flex;
+        transition: 450ms -webkit-transform;
+        transition: 450ms transform;
+        transition: 450ms transform, 450ms -webkit-transform;
+        font-size: 0;
+        white-space: nowrap;
+        margin: 4.375rem 0;
+        padding-bottom: 0.625rem;
+
+        &:hover .carousel-item {
+            opacity: 0.3;
+        }
+
+        &:hover .carousel-item:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+}
