@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/styles/components/Header.scss';
 
 //COMPONENTE PRESENTACIONAL
 //(sin lógica, solo envía una sección HTML a nuestra construcción)
@@ -6,10 +7,10 @@ import React from 'react';
 const Header = () => (
     //return explícito
     <header className="header">
-        <img className="header__img" src="../assets/images/logoceyeneseries.png" alt="Ceyene Series Logo" />
+        <img className="header__img" src='../assets/images/logoceyeneseries.png' alt="Ceyene Series Logo" />
         <div className="header__menu">
             <div className="header__menu--profile">
-                <img src="../assets/images/usuario.png" alt="Usuario" />
+                <img src='../assets/images/usuario.png' alt="Usuario" />
                 <p>Perfil</p>
             </div>
             <ul>
