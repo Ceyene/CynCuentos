@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/components/Search.scss';
 
 const mainTitleText = '¿Qué vas a leer hoy?';
-const mainInputPlaceholder = 'Buscar libros...';
+const mainInputPlaceholder = 'Buscar historias...';
 
 const Search = () => (
     <section className="main">
