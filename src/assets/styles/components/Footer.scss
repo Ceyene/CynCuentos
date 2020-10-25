@@ -1,12 +1,14 @@
+@import "../Vars.scss";
+
 .footer {
   display: flex;
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: $footer-background;
 
     a {
-        color: white;
+        color: $font-color;
         cursor: pointer;
         font-size: 14px;
         padding-left: 30px;

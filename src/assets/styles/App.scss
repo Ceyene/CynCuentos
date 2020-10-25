@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import "./Vars.scss";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, #23074d, #cc5333);
-  font-family: 'Poppins', sans-serif;
+  background: $back-gradient;
+  font-family: $theme-font;
 }
 
 ul {
@@ -18,7 +18,7 @@ a {
 
 input {
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: $theme-font;
 }
 
 button {
@@ -26,24 +26,24 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: $scrollbar-back;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.4);
+  background: $scrollbar-color;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar:hover {
-  background: #b3b3b3;
+  background: $scrollbar-hover;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar:hover:active {
-  background: #999999;
+  background: $scrollbar-active;
 }
 
 

@@ -12,7 +12,8 @@ const App = () => (
     <div className="App">
         <Header />
         <Search />
-        <Categories>
+
+        <Categories title="Mis favoritos">
             <Carousel>
                 <CarouselItem />
                 <CarouselItem />
@@ -21,6 +22,27 @@ const App = () => (
                 <CarouselItem />
             </Carousel>
         </Categories>
+
+        <Categories title="Los más leídos">
+            <Carousel>
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+            </Carousel>
+        </Categories>
+
+        <Categories title="Últimos lanzamientos  ">
+            <Carousel>
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+                <CarouselItem />
+            </Carousel>
+        </Categories>
+
         <Footer />
     </div>
 );

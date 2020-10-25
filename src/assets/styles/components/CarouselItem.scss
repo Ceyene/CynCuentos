@@ -1,3 +1,5 @@
+@import "../Vars.scss";
+
 .carousel-item {
   flex-shrink: 0;
   width: 12.5rem;
@@ -25,7 +27,7 @@
     }
 
     &__details {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        background: $item-gradient;
         font-size: 0.625rem;
         opacity: 0;
         transition: 450ms opacity;
@@ -42,8 +44,8 @@
         }
 
         &--info {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.2);
+            color: $font-color;
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 0.5rem;
             border: none;
         }

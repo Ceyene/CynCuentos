@@ -1,5 +1,7 @@
+@import "../Vars.scss";
+
 .categories__title {
-  color: white;
+  color: $font-color;
   font-size: 1rem;
   position: absolute;
   padding-left: 1.875rem;
