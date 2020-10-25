@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
@@ -8,43 +8,43 @@ import Footer from '../components/Footer';
 
 import '../assets/styles/App.scss';
 
-const App = () => (
-    <div className="App">
-        <Header />
-        <Search />
+const App = () => {
+    const [books, setBooks] = useState({ mylist: [], trends: [], latestReleases: [] });
 
-        <Categories title="Mis favoritos">
-            <Carousel>
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-            </Carousel>
-        </Categories>
+    useEffect(() => {
+        fetch('http://localhost:3000/initialState')
+            .then(response => response.json())
+            .then(data => setBooks(data));
+    }, []);
 
-        <Categories title="Los más leídos">
-            <Carousel>
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-            </Carousel>
-        </Categories>
+    return (
+        <div className="App">
+            <Header />
+            <Search />
+            {books.mylist.length > 0 &&
+                <Categories title="Mis favoritos">
+                    <Carousel>
+                        <CarouselItem />
+                    </Carousel>
+                </Categories>
+            }
 
-        <Categories title="Últimos lanzamientos  ">
-            <Carousel>
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-                <CarouselItem />
-            </Carousel>
-        </Categories>
 
-        <Footer />
-    </div>
-);
+            <Categories title="Los más leídos">
+                <Carousel>
+                    <CarouselItem />
+                </Carousel>
+            </Categories>
+
+            <Categories title="Últimos lanzamientos">
+                <Carousel>
+                    <CarouselItem />
+                </Carousel>
+            </Categories>
+
+            <Footer />
+        </div>
+    );
+};
 
 export default App;

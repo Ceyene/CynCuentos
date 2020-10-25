@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+    .header {
+
+        &__menu {
+            margin: 1.875rem;
+        }
+    
+        &__img {
+            margin-left: 1.875rem;
+        }
+        
+    }
+    
+
+    .main__title {
+        font-size: 1.875rem;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
