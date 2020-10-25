@@ -1,7 +1,7 @@
 {
   "initialState": {
-    "mylist": [],
-    "trends": [
+    "Guardados": [],
+    "Tendencia": [
       {
         "id": 1,
         "slug": "book-1",
@@ -101,7 +101,7 @@
         "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
       }
     ],
-    "latestReleases": [
+    "Novedades": [
       {
         "id": 8,
         "slug": "book-8",

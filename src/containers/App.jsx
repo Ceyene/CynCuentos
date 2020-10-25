@@ -5,44 +5,34 @@ import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
-
+import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
+const API = 'http://localhost:3000/initialState';
+
 const App = () => {
-    const [books, setBooks] = useState({ mylist: [], trends: [], latestReleases: [] });
+    const initialState = useInitialState(API);
 
-    useEffect(() => {
-        fetch('http://localhost:3000/initialState')
-            .then(response => response.json())
-            .then(data => setBooks(data));
-    }, []);
-
-    return (
-        <div className="App">
+    return initialState.length === 0 ? <h1> Loading... </h1> : (
+        <div className='App'>
             <Header />
             <Search />
-            {books.mylist.length > 0 && (
-                <Categories title="Mis favoritos">
-                    <Carousel>
-                        <CarouselItem />
-                    </Carousel>
-                </Categories>
-            )}
-
-            <Categories title="Los más leídos">
-                <Carousel>
-                    {
-                        books.trends.map(item =>
-                            <CarouselItem key={item.id} {...item} />)
-                    }
-                </Carousel>
-            </Categories>
-
-            <Categories title="Últimos lanzamientos">
-                <Carousel>
-                    <CarouselItem />
-                </Carousel>
-            </Categories>
+            {
+                Object.keys(initialState)
+                    .map((category) => {
+                        if (initialState[category].length) {
+                            return (
+                                <Categories key={category} title={category}>
+                                    <Carousel>
+                                        {
+                                            initialState[category].map((item) => <CarouselItem key={item.id} {...item} />)
+                                        }
+                                    </Carousel>
+                                </Categories>
+                            );
+                        }
+                    })
+            }
 
             <Footer />
         </div>
