@@ -21,18 +21,20 @@ const App = () => {
         <div className="App">
             <Header />
             <Search />
-            {books.mylist.length > 0 &&
+            {books.mylist.length > 0 && (
                 <Categories title="Mis favoritos">
                     <Carousel>
                         <CarouselItem />
                     </Carousel>
                 </Categories>
-            }
-
+            )}
 
             <Categories title="Los más leídos">
                 <Carousel>
-                    <CarouselItem />
+                    {
+                        books.trends.map(item =>
+                            <CarouselItem key={item.id} {...item} />)
+                    }
                 </Carousel>
             </Categories>
 
