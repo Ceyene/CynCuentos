@@ -10,42 +10,39 @@ body {
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 input {
-    outline: none;
-    font-family: $theme-font;
+  outline: none;
+  font-family: $theme-font;
 }
 
 button {
-    outline: none;
+  outline: none;
 }
 
 ::-webkit-scrollbar-thumb {
   background: $scrollbar-back;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   background: $scrollbar-color;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 ::-webkit-scrollbar:hover {
   background: $scrollbar-hover;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.063rem rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar:hover:active {
   background: $scrollbar-active;
 }
-
-
-

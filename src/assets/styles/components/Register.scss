@@ -4,17 +4,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 30px;
-  min-height: calc(100vh - 200px);
+  padding: 0 1.875rem;
+  min-height: calc(100vh - 12.5rem);
 
   &__container {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
-    border-radius: 40px;
+    border: 0.125rem solid white;
+    border-radius: 2.5rem;
     color: white;
-    padding: 60px 68px 40px;
-    min-height: 700px;
-    width: 300px;
+    padding: 3.75rem 4.25rem 2.5rem;
+    min-height: 43.75rem;
+    width: 18.75rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -24,17 +24,17 @@
       flex-direction: column;
 
       label {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
 
     &--login {
-      font-size: 14px;
+      font-size: 0.875rem;
       display: flex;
       justify-content: center;
 
       a {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: white;
         font-weight: bold;
         text-decoration: none;
@@ -53,12 +53,12 @@
     border-top: 0;
     border-right: 0;
     border-radius: 0;
-    border-bottom: 2px solid white;
+    border-bottom: 0.125rem solid white;
     font-family: "Quicksand", sans-serif;
-    margin-bottom: 20px;
-    padding: 0 20px;
+    margin-bottom: 1.25rem;
+    padding: 0 1.25rem;
     outline: none;
-    height: 50px;
+    height: 3.125rem;
     width: 100%;
 
     &::placeholder {
@@ -69,14 +69,14 @@
   .button {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     font-family: "Quicksand", sans-serif;
-    height: 50px;
-    letter-spacing: 1px;
-    margin: 10px 0;
+    height: 3.125rem;
+    letter-spacing: 0.065rem;
+    margin: 0.625rem 0;
   }
 }

@@ -5,20 +5,18 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  height: 100px;
+  height: 6.25rem;
   background-color: $footer-background;
 
-    a {
-        color: $font-color;
-        cursor: pointer;
-        font-size: 14px;
-        padding-left: 30px;
-        text-decoration: none;
+  a {
+    color: $font-color;
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding-left: 1.875rem;
+    text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
-
+    &:hover {
+      text-decoration: underline;
     }
-    
+  }
 }
