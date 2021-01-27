@@ -1,0 +1,36 @@
+.not-found {
+  text-align: center;
+  color: white;
+
+  &__container {
+    background: linear-gradient(#e2a036, #ee7674);
+    width: 100%;
+    min-height: calc(100vh - 11.25rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 5.625rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.563rem;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 1.563rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.625rem;
+    margin: 0.938rem;
+    display: inline-block;
+  }
+}
