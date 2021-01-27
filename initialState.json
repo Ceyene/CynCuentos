@@ -99,9 +99,7 @@
         "cover": "https://2.bp.blogspot.com/-f60SXfIRj8Q/XLuWQWN_C7I/AAAAAAAATAc/ZOES4SkVe7sHXLRf1AjUlzQ-ivHXM146gCLcBGAs/s1600/jamaisvu.jpg",
         "description": "Olvido automático en un relato para el reto de Soñando uno de tus sueños",
         "source": "https://www.elfrascodehistorias.com/2019/04/jamais-vu.html"
-      }
-    ],
-    "Novedades": [
+      },
       {
         "id": 8,
         "slug": "story-8",
@@ -143,7 +141,9 @@
         "cover": "https://1.bp.blogspot.com/-F0XIPngzoJI/X0LHoDDeJeI/AAAAAAAAWPg/EjV_tpHnR-QpvvCtRzBZRyaxTDIboQgJwCLcBGAsYHQ/s1600/metalicasoledad.jpg",
         "description": "Lo que ocurre cuando el ascensor cobra vida",
         "source": "https://www.elfrascodehistorias.com/2020/08/metalica-soledad.html"
-      },
+      }
+    ],
+    "Novedades": [
       {
         "id": 11,
         "slug": "story-11",
@@ -283,20 +283,6 @@
         "cover": "https://a.wattpad.com/cover/146054468-k420016.jpg",
         "description": "Un cuento por arcano del tarot",
         "source": "https://www.wattpad.com/story/146054468-el-tarot-de-madame-ceyene"
-      },
-      {
-        "id": 21,
-        "slug": "story-21",
-        "title": "El sueño de la pluma blanca",
-        "author": "Cyn Romero",
-        "type": "Paranormal",
-        "language": "Español",
-        "year": 2017,
-        "contentRating": "16+",
-        "length": "Antología",
-        "cover": "https://a.wattpad.com/cover/101024113-k260286.jpg",
-        "description": "Más historias paranormales",
-        "source": "https://www.wattpad.com/story/101024113-el-sue%C3%B1o-de-la-pluma-blanca"
       }
     ]
   }

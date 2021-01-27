@@ -1,31 +1,55 @@
 .carousel {
-  width: 100%;
-  overflow: scroll;
-  padding-left: 1.875rem;
+  width: 100vw;
   position: relative;
+  display: flex;
+  align-items: center;
 
-    &__container {
-        display: flex;
-        transition: 450ms -webkit-transform;
-        transition: 450ms transform;
-        transition: 450ms transform, 450ms -webkit-transform;
-        font-size: 0;
-        white-space: nowrap;
-        margin: 4.375rem 0;
-        padding-bottom: 0.625rem;
+  &__container {
+    width: 90vw;
+    overflow: hidden;
+  }
 
-        &:hover .carousel-item {
-            opacity: 0.3;
-        }
+  &__slide {
+    display: flex;
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 4.375rem 0;
+    padding-bottom: 0.625rem;
 
-        &:hover .carousel-item:hover {
-            transform: scale(1.5);
-            opacity: 1;
-        }
+    &:hover .carousel-item {
+      opacity: 0.3;
     }
 
-    &::-webkit-scrollbar{
-        display: none;
+    &:hover .carousel-item:hover {
+      transform: scale(1.5);
+      opacity: 1;
     }
+  }
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: rgba(49, 48, 48, 0.404);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.5s ease;
+  border-radius: 3px 0 0 3px;
+  border: none;
+  user-select: none;
+  margin: 1rem;
+}
+
+/* Next Button Border Style */
+.next {
+  border-radius: 0 3px 3px 0;
 }
