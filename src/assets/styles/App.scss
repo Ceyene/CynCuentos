@@ -1,10 +1,13 @@
 @import "./Vars.scss";
 @import "./Media.scss";
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background: $back-gradient;
   font-family: $theme-font;
 }

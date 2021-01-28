@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &__container {
     width: 90vw;
@@ -46,7 +47,7 @@
   border-radius: 3px 0 0 3px;
   border: none;
   user-select: none;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 /* Next Button Border Style */

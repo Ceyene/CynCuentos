@@ -12,7 +12,7 @@ const Carousel = ({ children }) => {
   //it handles the right movement of the slider
   const goRight = () => {
     console.log("right", x);
-    x >= -95 && x !== -115 ? setX(x - 25) : setX(-115);
+    x >= -95 && x !== -110 ? setX(x - 25) : setX(-110);
   };
 
   return (
