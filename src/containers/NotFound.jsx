@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/NotFound.scss";
 
 const NotFound = () => (
@@ -6,7 +7,7 @@ const NotFound = () => (
     <section className="not-found">
       <h1>404</h1>
       <p>Página no encontrada</p>
-      <a href="index.html">Volver a inicio</a>
+      <Link to="/">Volver a inicio</Link>
     </section>
   </section>
 );

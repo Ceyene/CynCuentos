@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/Header.scss";
 
 import logo from "../assets/static/logoceyenelibros.png";
@@ -10,7 +11,9 @@ import userIcon from "../assets/static/usuario.png";
 const Header = () => (
   //return explícito
   <header className="header">
-    <img className="header__img" src={logo} alt="Ceyene Libros Logo" />
+    <Link to="/">
+      <img className="header__img" src={logo} alt="Ceyene Libros Logo" />
+    </Link>
     <div className="header__menu">
       <div className="header__menu--profile">
         <img src={userIcon} alt="Usuario" />
@@ -18,10 +21,10 @@ const Header = () => (
       </div>
       <ul>
         <li>
-          <a href="login.html">Cuenta</a>
+          <Link to="/login">Cuenta</Link>
         </li>
         <li>
-          <a href="login.html">Cerrar Sesión</a>
+          <Link to="/login">Cerrar sesión</Link>
         </li>
       </ul>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/Login.scss";
 import googleIcon from "../assets/static/googleicon.png";
 import twitterIcon from "../assets/static/twittericon.png";
@@ -10,9 +11,11 @@ const Login = () => (
       <form className="login__container--form">
         <input type="text" className="input" placeholder="Correo" />
         <input type="text" className="input" placeholder="Contraseña" />
-        <button className="button">Iniciar sesión</button>
+        <button type="button" className="button">
+          Iniciar sesión
+        </button>
         <div className="login__container--remember-me">
-          <label for="">
+          <label htmlFor="cbox1">
             <input type="checkbox" id="cbox1" value="checkbox" />
             Recordarme
           </label>
@@ -21,14 +24,16 @@ const Login = () => (
       </form>
       <section className="login__container--social-media">
         <div>
-          <img src={googleIcon} alt="Google" /> Iniciar sesión con Google
+          <img src={googleIcon} alt="Google" />
+          Iniciar sesión con Google
         </div>
         <div>
-          <img src={twitterIcon} alt="Twitter" /> Iniciar sesión con Twitter
+          <img src={twitterIcon} alt="Twitter" />
+          Iniciar sesión con Twitter
         </div>
       </section>
       <p className="login__container--register">
-        ¿No tengo ninguna cuenta? <a href="register.html">Registrarme</a>
+        ¿No tengo ninguna cuenta? <Link to="/register">Registrarme</Link>
       </p>
     </section>
   </section>
