@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-$theme-font: 'Poppins', sans-serif;
+$theme-font: "Poppins", sans-serif;
 $back-gradient: linear-gradient(to bottom, #23074d, #cc5333);
-$item-gradient: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+$item-gradient: linear-gradient(
+  to top,
+  rgba(0, 0, 0, 0.9) 0%,
+  rgba(0, 0, 0, 0) 100%
+);
 $footer-background: rgba(255, 255, 255, 0.3);
 $font-color: white;
 $scrollbar-back: #ccc;
-$scrollbar-color: rgba(255, 255, 255, 0.4);;
+$scrollbar-color: rgba(255, 255, 255, 0.4);
 $scrollbar-hover: #b3b3b3;
 $scrollbar-active: #999999;

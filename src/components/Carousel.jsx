@@ -3,15 +3,13 @@ import "../assets/styles/components/Carousel.scss";
 
 const Carousel = ({ children }) => {
   //state that will handle the horizontal position of the slider
-  const [x, setX] = useState(1);
+  const [x, setX] = useState(0);
   //it handles the left movement of the slider
   const goLeft = () => {
-    console.log("left", x);
-    x <= -40 ? setX(x + 25) : setX(1);
+    x <= -40 ? setX(x + 25) : setX(0);
   };
   //it handles the right movement of the slider
   const goRight = () => {
-    console.log("right", x);
     x >= -95 && x !== -110 ? setX(x - 25) : setX(-110);
   };
 

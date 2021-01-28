@@ -4,7 +4,6 @@ import Search from "../components/Search";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CarouselItem";
-import Footer from "../components/Footer";
 import useInitialState from "../hooks/useInitialState";
 import "../assets/styles/App.scss";
 
@@ -32,8 +31,6 @@ const Home = () => {
           );
         }
       })}
-
-      <Footer />
     </div>
   );
 };
