@@ -1,38 +1,41 @@
 import React from "react";
-import Header from "../components/Header";
+import { connect } from "react-redux";
 import Search from "../components/Search";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CarouselItem";
-import useInitialState from "../hooks/useInitialState";
 import "../assets/styles/App.scss";
 
-const API = "http://localhost:3000/initialState";
-
-const Home = () => {
-  const initialState = useInitialState(API);
-
-  return initialState.length === 0 ? (
-    <h1> Loading... </h1>
-  ) : (
-    <div className="App">
-      <Header />
+const Home = ({ saved, trends }) => {
+  console.log(trends);
+  return (
+    <>
       <Search />
-      {Object.keys(initialState).map((category) => {
-        if (initialState[category].length) {
-          return (
-            <Categories key={category} title={category}>
-              <Carousel>
-                {initialState[category].map((item) => (
-                  <CarouselItem key={item.id} {...item} />
-                ))}
-              </Carousel>
-            </Categories>
-          );
-        }
-      })}
-    </div>
+      {saved.length > 0 && (
+        <Categories title="Mi lista">
+          <Carousel>
+            {saved.map((item) => (
+              <CarouselItem key={item.id} {...item} isList />
+            ))}
+          </Carousel>
+        </Categories>
+      )}
+      <Categories title="Tendencias">
+        <Carousel>
+          {trends.map((item) => (
+            <CarouselItem key={item.id} {...item} />
+          ))}
+        </Carousel>
+      </Categories>
+    </>
   );
 };
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    saved: state.saved,
+    trends: state.trends,
+  };
+};
+
+export default connect(mapStateToProps, null)(Home);
