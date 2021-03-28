@@ -21,15 +21,13 @@ const CarouselItem = (props) => {
       <img className="carousel-item__img" src={cover} alt={title} />
       <div className="carousel-item__details">
         <div className="carousel-item__details--actions">
-          <div>
-            <Link to={`/player/${id}`}>
-              <img
-                className="carousel-item__details--img"
-                src={readIcon}
-                alt="Abrir"
-              />
-            </Link>
-          </div>
+          <Link to={`/player/${id}`}>
+            <img
+              className="carousel-item__details--img"
+              src={readIcon}
+              alt="Abrir"
+            />
+          </Link>
           {isList ? (
             <img
               className="carousel-item__details--img"

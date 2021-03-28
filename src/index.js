@@ -23,7 +23,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-DEjutMiBnnE/XyYWf7at8aI/AAAAAAAAWAw/3pJ6qr2aHPsXw-7Cp0NSJZNiD8VgfL9FgCLcBGAsYHQ/s1600/sushialreves.jpg",
       description: "Historia para las cinco líneas de agosto de 2019",
-      source: "https://www.elfrascodehistorias.com/2019/08/sushi-al-reves.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 2,
@@ -38,8 +38,7 @@ const initialState = {
       cover:
         "https://4.bp.blogspot.com/-tVURp49R7aA/XHGTvnm9LWI/AAAAAAAASPs/GC_GgvOWUGsPaQq0_7pfUSFxF3Vk_D7TACLcBGAs/s1600/cruzando%2Balvear.jpg",
       description: "Cuarta historia para el mes de febrero",
-      source:
-        "https://www.elfrascodehistorias.com/2019/02/cruzando-alvear.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 3,
@@ -54,8 +53,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-1EeZ2lKOkDU/XyYXYrb-lDI/AAAAAAAAWA4/rr_EalmIf78CpxS0SLpEZKgGwgtTSkqWgCLcBGAsYHQ/s1600/hermososhermosos.jpg",
       description: "La historia de una mentira hermosa, para el reto juevero",
-      source:
-        "https://www.elfrascodehistorias.com/2019/08/hermosos-hermosos.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 4,
@@ -70,7 +68,7 @@ const initialState = {
       cover:
         "https://4.bp.blogspot.com/-xn-sNnXhu-w/XMj6cY_6pnI/AAAAAAAATGM/KK-h6SH3BGQjq-muO__ZgpAXNgQvhqUiACLcBGAs/s1600/Reto_semanal_1.jpg",
       description: "Relato para el desafío de Sueños de Tinta",
-      source: "https://www.elfrascodehistorias.com/2019/05/frio-misterio.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 5,
@@ -85,7 +83,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-B5JLZjwQGws/XQ6i5yeIriI/AAAAAAAATj0/rbuAQb54bRA1WqOP5vBeQ9xr1SdV09gPACLcBGAs/s1600/disfrutalo.jpg",
       description: "Pesadilla servida",
-      source: "https://www.elfrascodehistorias.com/2019/06/disfrutalo.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 6,
@@ -100,7 +98,7 @@ const initialState = {
       cover:
         "https://4.bp.blogspot.com/-dSrVe-Kt61Q/XMjweEegAoI/AAAAAAAATGA/deN9ZCBgj8Q8ODIiGoKLkCTNXT1yH3NWQCLcBGAs/s1600/presque%2Bvu.jpg",
       description: "La búsqueda de un recuerdo soñado",
-      source: "https://www.elfrascodehistorias.com/2019/04/presque-vu.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 7,
@@ -116,7 +114,7 @@ const initialState = {
         "https://2.bp.blogspot.com/-f60SXfIRj8Q/XLuWQWN_C7I/AAAAAAAATAc/ZOES4SkVe7sHXLRf1AjUlzQ-ivHXM146gCLcBGAs/s1600/jamaisvu.jpg",
       description:
         "Olvido automático en un relato para el reto de Soñando uno de tus sueños",
-      source: "https://www.elfrascodehistorias.com/2019/04/jamais-vu.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 8,
@@ -131,7 +129,7 @@ const initialState = {
       cover:
         "https://4.bp.blogspot.com/--1cGREfeD6o/XMTltGqVQxI/AAAAAAAATFw/xCJX7Zt0FCUx2tpIEm5hwSdUQPKvYEHiQCLcBGAs/s1600/deja%2Bvu.jpg",
       description: "Atisbo de un recuerdo para una memoria inmortal",
-      source: "https://www.elfrascodehistorias.com/2019/04/deja-vu.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 9,
@@ -146,7 +144,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-6s_N3x0pueU/XyY5aYJbqqI/AAAAAAAAWEY/1L-DcXwBidQbnRkf9vfeNtjsZbEORU1hwCLcBGAsYHQ/s1600/eternena.jpg",
       description: "Parodia de una cuarentena y un fugitivo de la ciudad",
-      source: "https://www.elfrascodehistorias.com/2020/04/eternena.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 10,
@@ -161,8 +159,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-F0XIPngzoJI/X0LHoDDeJeI/AAAAAAAAWPg/EjV_tpHnR-QpvvCtRzBZRyaxTDIboQgJwCLcBGAsYHQ/s1600/metalicasoledad.jpg",
       description: "Lo que ocurre cuando el ascensor cobra vida",
-      source:
-        "https://www.elfrascodehistorias.com/2020/08/metalica-soledad.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
   ],
   Novedades: [
@@ -179,7 +176,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-QOiWaf-48sM/XQgp3Z4IEZI/AAAAAAAATgc/2KE-QL_dfBoeepV4T6mkADw5WvbsnfmWgCLcBGAs/s1600/mood.jpg",
       description: "Cuando la bruja se pasó de pesimista con sus predicciones",
-      source: "https://www.elfrascodehistorias.com/2019/06/mood.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 12,
@@ -194,8 +191,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-fB2Tj5CScsM/Xy9AjaGpw4I/AAAAAAAAWII/TO19BB9B9gsf6e-p1mwrn7Iac2ksW5hFwCLcBGAsYHQ/s1600/losmuertosnodanbesos.jpg",
       description: "Deliciosa pesadilla sensual",
-      source:
-        "https://www.elfrascodehistorias.com/2020/08/los-muertos-no-dan-besos.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 13,
@@ -210,7 +206,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-2C_OUzk3ZCQ/XyYZb3aGw3I/AAAAAAAAWBQ/pu0sxQr1BWYy7gKPMFKlG2-UQPBqV5cJQCLcBGAsYHQ/s1600/fan.jpg",
       description: "Ella quería que la aplaudieran, pero solo humanos",
-      source: "https://www.elfrascodehistorias.com/2019/09/fan.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 14,
@@ -225,7 +221,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-PxH-gqg28-k/Xzl_wjhUVeI/AAAAAAAAWLI/Ys_RLt693sUd_F5IVo9QDIIhRvGSp5YZACLcBGAsYHQ/s1600/laparedroja.jpg",
       description: "Se mudó solo a una casa donde ya había alguien esperándolo",
-      source: "https://www.elfrascodehistorias.com/2020/08/la-pared-roja.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 15,
@@ -240,8 +236,7 @@ const initialState = {
       cover:
         "https://1.bp.blogspot.com/-w7g7YzYiB4A/XTkpt4Ol56I/AAAAAAAATuU/kz_ojJC2QX4s-SuXN86EZq585ueO17WqACLcBGAs/s1600/sirenaaa%2B%25281%2529.jpg",
       description: "El amor no siempre viene cuando se lo espera",
-      source:
-        "https://www.elfrascodehistorias.com/2019/07/de-reyes-locura-y-colas-de-sirena.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 16,
@@ -257,8 +252,7 @@ const initialState = {
         "https://1.bp.blogspot.com/-scDQA30osUA/XuZzv1COPaI/AAAAAAAAVtQ/qx9zA2dxegYXOvO3ww6xJ3liC_mMAua4wCLcBGAsYHQ/s1600/felinoluna.jpg",
       description:
         "Leyenda no oficial de la preferencia de los dioses por los gatos",
-      source:
-        "https://www.elfrascodehistorias.com/2020/06/el-felino-y-la-luna.html",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 17,
@@ -272,8 +266,7 @@ const initialState = {
       length: "Novela corta",
       cover: "https://a.wattpad.com/cover/14959749-k663673.jpg",
       description: "La historia de un amor adolescente, narrada por un gato",
-      source:
-        "https://www.wattpad.com/story/14959749-desde-la-ventana-cr%C3%B3nicas-gatunas-1",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 18,
@@ -288,8 +281,7 @@ const initialState = {
       cover: "https://a.wattpad.com/cover/121547486-k125859.jpg",
       description:
         "No apartes los ojos del brillo de la estrella, si no quieres ser enterrado por la tormenta",
-      source:
-        "https://www.wattpad.com/story/121547486-kydara-el-esp%C3%ADritu-del-desierto",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 19,
@@ -303,8 +295,7 @@ const initialState = {
       length: "Antología",
       cover: "https://a.wattpad.com/cover/62838427-k960281.jpg",
       description: "Microrrelatos terroríficos",
-      source:
-        "https://www.wattpad.com/story/62838427-el-fantasma-en-mi-tintero",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
     {
       id: 20,
@@ -318,8 +309,7 @@ const initialState = {
       length: "Antología",
       cover: "https://a.wattpad.com/cover/146054468-k420016.jpg",
       description: "Un cuento por arcano del tarot",
-      source:
-        "https://www.wattpad.com/story/146054468-el-tarot-de-madame-ceyene",
+      source: "https://mdstrm.com/video/58333e214ad055d208427db5.mp4",
     },
   ],
 };
