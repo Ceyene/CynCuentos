@@ -1,18 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 import Header from "../components/Header";
-import Search from "../components/Search";
+import Hero from "../components/Hero";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CarouselItem";
 import "../assets/styles/App.scss";
 
 const Home = ({ saved, trends }) => {
-  console.log(trends);
   return (
     <>
       <Header />
-      <Search />
+      <Hero />
       {saved.length > 0 && (
         <Categories title="Mi lista">
           <Carousel>

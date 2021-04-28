@@ -1,33 +1,62 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { setFavorite, deleteFavorite } from "../actions";
 import "../assets/styles/components/CarouselItem.scss";
-import readIcon from "../assets/static/leer.png";
-import plusIcon from "../assets/static/add.png";
-import removeIcon from "../assets/static/delete.png";
+import Modal from "./Modal";
+import readIcon from "../assets/static/read.svg";
+import plusIcon from "../assets/static/add.svg";
+import removeIcon from "../assets/static/delete.svg";
 
 const CarouselItem = (props) => {
-  const { id, cover, title, type, year, contentRating, length, isList } = props;
+  const {
+    id,
+    cover,
+    title,
+    type,
+    year,
+    contentRating,
+    length,
+    isList,
+    source,
+  } = props;
+  const [modal, setModal] = useState(false);
   const handleSetFavorite = () => {
-    props.setFavorite({ id, cover, title, type, year, contentRating, length });
+    props.setFavorite({
+      id,
+      cover,
+      title,
+      type,
+      year,
+      contentRating,
+      length,
+      source,
+    });
   };
   const handleDeleteFavorite = (itemId) => {
     props.deleteFavorite(itemId);
+  };
+  const handleClose = (e) => {
+    setModal(false);
   };
   return (
     <div className="carousel-item">
       <img className="carousel-item__img" src={cover} alt={title} />
       <div className="carousel-item__details">
         <div className="carousel-item__details--actions">
-          <Link to={`/player/${id}`}>
-            <img
-              className="carousel-item__details--img"
-              src={readIcon}
-              alt="Abrir"
-            />
-          </Link>
+          <img
+            className="carousel-item__details--img"
+            src={readIcon}
+            alt="Ir a la historia"
+            onClick={() => setModal(true)}
+          />
+          <Modal
+            source={source}
+            isOpen={modal}
+            onClose={() => {
+              handleClose();
+            }}
+          />
           {isList ? (
             <img
               className="carousel-item__details--img"

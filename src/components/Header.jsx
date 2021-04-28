@@ -6,7 +6,7 @@ import { logoutRequest } from "../actions";
 import "../assets/styles/components/Header.scss";
 import gravatar from "../utils/gravatar";
 import logo from "../assets/static/logoceyenelibros.png";
-import userIcon from "../assets/static/usuario.png";
+import userIcon from "../assets/static/user.svg";
 
 //COMPONENTE PRESENTACIONAL
 //(sin lógica, solo envía una sección HTML a nuestra construcción)
