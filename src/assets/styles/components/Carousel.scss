@@ -1,56 +1,27 @@
-.carousel {
-  width: 100vw;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__container {
-    width: 90vw;
-    overflow: hidden;
-  }
-
-  &__slide {
-    display: flex;
-    transition: 450ms -webkit-transform;
-    transition: 450ms transform;
-    transition: 450ms transform, 450ms -webkit-transform;
-    font-size: 0;
-    white-space: nowrap;
-    margin: 4.375rem 0;
-    padding-bottom: 0.625rem;
-
-    &:hover .carousel-item {
-      opacity: 0.3;
-    }
-
-    &:hover .carousel-item:hover {
-      transform: scale(1.5);
-      opacity: 1;
-    }
-  }
+.rec-carousel {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 2.5rem auto;
 
   &::-webkit-scrollbar {
     display: none;
   }
 }
-.prev,
-.next {
-  cursor: pointer;
-  width: auto;
-  padding: 0.5rem 1rem;
-  color: white;
+
+.rec.rec-arrow {
   background-color: rgba(49, 48, 48, 0.404);
-  font-weight: bold;
-  font-size: 1.5rem;
-  transition: 0.5s ease;
-  border-radius: 3px 0 0 3px;
-  border: none;
-  user-select: none;
-  margin: 0.5rem;
+  color: #ffffff;
+
+  &:focus:enabled,
+  &:hover:enabled {
+    background-color: rgba(49, 48, 48, 0.404);
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
 }
 
-/* Next Button Border Style */
-.next {
-  border-radius: 0 3px 3px 0;
+.rec.rec-pagination {
+  display: none;
 }

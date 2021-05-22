@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Categories from "../components/Categories";
-import Carousel from "../components/Carousel";
+import StoryCarousel from "../components/StoryCarousel";
 import CarouselItem from "../components/CarouselItem";
 import "../assets/styles/App.scss";
 
@@ -12,22 +12,22 @@ const Home = ({ saved, trends }) => {
     <>
       <Header />
       <Hero />
-      {saved.length > 0 && (
-        <Categories title="Mi lista">
-          <Carousel>
-            {saved.map((item) => (
-              <CarouselItem key={item.id} {...item} isList />
-            ))}
-          </Carousel>
-        </Categories>
-      )}
       <Categories title="Tendencias">
-        <Carousel>
+        <StoryCarousel>
           {trends.map((item) => (
             <CarouselItem key={item.id} {...item} />
           ))}
-        </Carousel>
+        </StoryCarousel>
       </Categories>
+      {saved.length > 0 && (
+        <Categories title="Mi lista">
+          <StoryCarousel>
+            {saved.map((item) => (
+              <CarouselItem key={item.id} {...item} isList />
+            ))}
+          </StoryCarousel>
+        </Categories>
+      )}
     </>
   );
 };

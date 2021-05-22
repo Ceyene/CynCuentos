@@ -1,12 +1,10 @@
 @import "../Vars.scss";
 
 .carousel-item {
-  flex-shrink: 0;
-  width: 15.5rem;
-  height: 14.625rem;
+  width: 17.5rem;
+  height: 16.625rem;
   border-radius: 1.25rem;
   overflow: hidden;
-  margin-right: 0.625rem;
   font-size: 1.25rem;
   display: inline-block;
   cursor: pointer;
@@ -15,22 +13,15 @@
   transform-origin: center left;
   position: relative;
 
-  &:hover ~ .carousel-item {
-    -webkit-transform: translate3d(6.25rem, 0, 0);
-    transform: translate3d(6.25rem, 0, 0);
-  }
-
   &__img {
-    width: 15.5rem;
-    height: 14.625rem;
+    width: 17.5rem;
+    height: 16.625rem;
     object-fit: cover;
   }
 
   &__details {
     background: $item-gradient;
-    font-size: 0.625rem;
-    opacity: 0;
-    transition: 450ms opacity;
+    font-size: 1rem;
     padding: 0;
     position: absolute;
     left: 0;
@@ -42,42 +33,41 @@
     }
 
     &--img {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2rem;
+      height: 2rem;
       margin-left: 1rem;
+      margin-right: 1.5rem;
       margin-bottom: 0.5rem;
-      box-shadow: 5px 3px 5px 0px rgba(44, 44, 44, 0.36);
+      border-radius: 50%;
+      box-shadow: 5px 3px 5px 0px rgba(0, 0, 0, 0.6);
     }
 
     &--info {
       color: $font-color;
       background-color: rgba(0, 0, 0, 0.1);
-      padding: 0.5rem;
+      padding: 0 0 0.5rem 1rem;
       border: none;
     }
 
     &--title {
       width: 100%;
-      margin: 0;
-      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      line-height: 1rem;
     }
 
     &--genre {
       width: 100%;
-      margin: 0;
+      margin: 0.3rem 0;
       text-transform: uppercase;
-      font-size: 0.6rem;
+      font-size: 0.75rem;
     }
 
     &--subtitle {
       width: 100%;
-      font-size: 0.5rem;
+      font-size: 0.9rem;
       margin: 0;
       padding: 0.5rem;
     }
-  }
-
-  &:hover .carousel-item__details {
-    opacity: 1;
   }
 }
