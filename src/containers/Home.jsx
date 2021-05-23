@@ -12,22 +12,24 @@ const Home = ({ saved, trends }) => {
     <>
       <Header />
       <Hero />
-      <Categories title="Tendencias">
-        <StoryCarousel>
-          {trends.map((item) => (
-            <CarouselItem key={item.id} {...item} />
-          ))}
-        </StoryCarousel>
-      </Categories>
-      {saved.length > 0 && (
-        <Categories title="Mi lista">
+      <div className="main__container">
+        <Categories title="Tendencias">
           <StoryCarousel>
-            {saved.map((item) => (
-              <CarouselItem key={item.id} {...item} isList />
+            {trends.map((item) => (
+              <CarouselItem key={item.id} {...item} />
             ))}
           </StoryCarousel>
         </Categories>
-      )}
+        {saved.length > 0 && (
+          <Categories title="Mi lista">
+            <StoryCarousel>
+              {saved.map((item) => (
+                <CarouselItem key={item.id} {...item} isList />
+              ))}
+            </StoryCarousel>
+          </Categories>
+        )}
+      </div>
     </>
   );
 };
