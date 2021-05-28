@@ -12,6 +12,6 @@
   }
 
   &__container {
-    min-height: 68vh;
+    min-height: min-height: calc(100vh - 11.25rem);
   }
 }
